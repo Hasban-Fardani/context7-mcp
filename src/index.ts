@@ -83,7 +83,6 @@ server.tool(
     tokens: z
       .number()
       .min(DEFAULT_MINIMUM_TOKENS)
-      .optional()
       .describe(
         `Maximum number of tokens of documentation to retrieve (default: ${DEFAULT_MINIMUM_TOKENS}). Higher values provide more context but consume more tokens.`
       ),
